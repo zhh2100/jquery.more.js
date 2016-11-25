@@ -1,3 +1,4 @@
+<pre>
 # jquery.more.js
 使用jquery.more.js来实现点击底部更多后, 底部加载出新的数据，ajax加载更多
 
@@ -87,3 +88,4 @@ $data=array(
 );
 
 echo json_encode(array_slice($data,$last,$amount));exit;
+</pre>
