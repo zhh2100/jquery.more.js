@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta charset="utf-8"/>  
+    <title>demo</title> 
+<style>
+</style>
+<script src="http://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+</head>
+<body style="height:1000px;">
+
+<div id="more">  
+     <div class="single_item">  
+			<div class="date"></div>  
+			<div class="author"></div>  
+			<div class="title"></div>
+     </div>  
+     <a href="javascript:;" class="get_more">::点击加载更多内容::</a>  
+</div>
+<script src="jquery.more.js"></script>
+<script type="text/javascript">
+jQuery(function($){
+    $('#more').more({'url': 'data.php'});
+});
+$(window).scroll(function () {
+	if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+		$('.get_more').click();
+	}
+});
+/*
+    jQuery(function() {
+        jQuery('#vlist').more({
+            "url": 'portal.php?mod=ajax&do=mvoucher',
+            "data":{"int":"{$int}"},
+            "template": ".busbox",
+            "trigger": "#get_more"
+        });
+    });
+*/
+</script>
+</body>
+</html>
