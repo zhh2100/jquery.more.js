@@ -19,34 +19,34 @@ spinner_code  :'<img src="loading.gif"/>'         loading.gif路径
 
 示例
 html文件
-<!DOCTYPE html>  
-<html>  
-<head>  
-	<meta charset="utf-8"/>  
-	<title>demo</title> 
-<style>
-</style>
-<script src="http://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
-<script src="jquery.more.min.js"></script>
-</head>
-<body style="height:1000px;">
+&lt;!DOCTYPE html&gt;  
+&lt;html&gt;  
+&lt;head&gt;  
+	&lt;meta charset=&quot;utf-8&quot;/&gt;  
+	&lt;title&gt;demo&lt;/title&gt; 
+&lt;style&gt;
+&lt;/style&gt;
+&lt;script src=&quot;http://cdn.bootcss.com/jquery/1.12.3/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;jquery.more.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body style=&quot;height:1000px;&quot;&gt;
+&lt;div id=&quot;more&quot;&gt;  
+	 &lt;div class=&quot;single_item&quot;&gt;  
+			&lt;div class=&quot;other&quot;&gt;&lt;div class=&quot;date&quot;&gt;&lt;/div&gt;其他内容&lt;/div&gt;
+			&lt;div class=&quot;author&quot;&gt;&lt;/div&gt;  
+			&lt;div class=&quot;title&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;other&quot;&gt;其他内容&lt;/div&gt;
+	 &lt;/div&gt;
+	 &lt;a href=&quot;javascript:;&quot; class=&quot;get_more&quot;&gt;::点击加载更多内容::&lt;/a&gt;  
+&lt;/div&gt;
 
-<div id="more">  
-	 <div class="single_item">  
-			<div class="other"><div class="date"></div>其他内容</div>
-			<div class="author"></div>  
-			<div class="title"></div>
-      <div class="other">其他内容</div>
-	 </div>
-	 <a href="javascript:;" class="get_more">::点击加载更多内容::</a>  
-</div>
-<script type="text/javascript">
+&lt;script type=&quot;text/javascript&quot;&gt;
 jQuery(function($){
 	$('#more').more({'url': 'data.php','scroll':'true'});
 });
-</script>
-</body>
-</html>
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 
 php文件
 <?php
