@@ -9,11 +9,11 @@
 amount  :'10'           每次显示记录数
 url :'comments.php'     请求后台的地址
 template:'.single_item' ajax返回json数据替换对应模板中的class  
-如array(array('title'=>'标题1','content'=>'内容1'))替换<div class="single_item"><div class="title"></div><div class="content"></div></div>
-替换成<div class="single_item"><div class="title">标题1</div><div class="content">内容1</div></div>
+如array(array('title'=&gt;'标题1','content'=&gt;'内容1'))替换&lt;div class=&quot;single_item&quot;&gt;&lt;div class=&quot;title&quot;&gt;&lt;/div&gt;&lt;div class=&quot;content&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+替换成&lt;div class=&quot;single_item&quot;&gt;&lt;div class=&quot;title&quot;&gt;标题1&lt;/div&gt;&lt;div class=&quot;content&quot;&gt;内容1&lt;/div&gt;&lt;/div&gt;
 trigger :'#get_more'    触发加载更多记录的class属性
 scroll  :'false'        是否支持滚动触发加载
-spinner_code  :'<img src="loading.gif"/>'         loading.gif路径
+spinner_code  :'&lt;img src=&quot;loading.gif&quot;/&gt;'         loading.gif路径
 
 
 
