@@ -1,10 +1,11 @@
 /**
  * jquery.more.js   git@github.com:qqtxt/jquery.more.js.git
+ * 兼容jquery1.X-2.X
  * ============================================================================
  * 网站地址: http://www.jetee.cn/ qq:112738102  Q群30133166
  * ============================================================================
  * $Author: embrace$
- * @version 0.0.1 17:29 2016/11/25
+ * @version 0.0.3 17:29 2016/11/25
  */
 /**
  * 调用参数,方法如:$('#more').more({'url': 'data.php'});
@@ -66,7 +67,7 @@
 		},     
 		remove        : function(){
 			target.children(settings.trigger).unbind('.more');
-			target.unbind('.more');
+			$(window).unbind('.more');
 			target.children(settings.trigger).remove();
 		},
 		add_elements  : function(data){
