@@ -1,5 +1,5 @@
 /**
- * jquery.more.js   git@github.com:qqtxt/jquery.more.js.git
+ * jquery.more.js   https://github.com/qqtxt/jquery.more.js
  * 兼容jquery1.X-2.X
  * ============================================================================
  * 网站地址: http://www.jetee.cn/ qq:112738102  Q群30133166
@@ -11,12 +11,12 @@
  * 调用参数,方法如:$('#more').more({'url': 'data.php'});
  * amount  :'10'           每次显示记录数
  * url :'comments.php'     请求后台的地址
- * template:'.single_item' ajax返回json数据替换对应模板中的class  
+ * 'template':'.single_item' ajax返回json数据替换对应模板中的class  
  *	如array(array('title'=>'标题1','content'=>'内容1'))替换<div class="single_item"><div class="title"></div><div class="content"></div></div>
  *  替换成<div class="single_item"><div class="title">标题1</div><div class="content">内容1</div></div>
  * trigger :'#get_more'    触发加载更多记录的class属性
  * scroll  :'false'        是否支持滚动触发加载
- * spinner_code  :'<img src="loading.gif"/>'         loading.gif路径
+ * 'spinner_code' :'<img src="loading.gif"/>'         loading.gif路径
  */
 (function($){          
 	var target = null;
@@ -91,6 +91,7 @@
 			else  methods.remove();
 			target.children('.more_loader_spinner').css('display','none');
 			if(counter < settings.amount) methods.remove();
+			
 		},
 		get_data: function(){   
 			var ile;

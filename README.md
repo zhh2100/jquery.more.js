@@ -1,4 +1,5 @@
 <pre>
+https://github.com/qqtxt/jquery.more.js
 # jquery.more.js 兼容jquery1.X-2.X
 使用jquery.more.js来实现点击底部更多后, 底部加载出新的数据，ajax加载更多
 
